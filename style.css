@@ -677,57 +677,6 @@ a.workshop__link:hover { color: var(--color-gold); }
   font-style: italic;
 }
 
-/* ─── ИНТЕРПРОМ ──────────────────────────────────────────────── */
-.interprom__grid {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 4rem;
-  align-items: start;
-  margin-bottom: 3rem;
-}
-.interprom__lead {
-  font-size: 1.1rem;
-  color: var(--color-text);
-  margin-bottom: 1.5rem;
-}
-.interprom__text p { color: var(--color-text-dim); margin-bottom: 1rem; }
-.interprom__stats {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  min-width: 200px;
-}
-.interprom__stat { text-align: center; }
-.interprom__stat-num {
-  display: block;
-  font-family: var(--font-display);
-  font-size: 3rem;
-  color: var(--color-gold);
-  line-height: 1;
-  margin-bottom: 0.4rem;
-}
-.interprom__stat-label {
-  font-size: 0.8rem;
-  color: var(--color-text-faint);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  line-height: 1.4;
-}
-.interprom__gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0.75rem;
-}
-.gallery__placeholder {
-  aspect-ratio: 16/10;
-  background: var(--color-bg-card);
-  border: 1px dashed var(--color-border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.8rem;
-  color: var(--color-text-faint);
-}
 
 /* ─── ШКОЛА ──────────────────────────────────────────────────── */
 
@@ -1243,8 +1192,6 @@ a.workshop__link:hover { color: var(--color-gold); }
   .school__grid { grid-template-columns: 1fr; }
   .school__img { display: none; }
   .resources__grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
-  .interprom__grid { grid-template-columns: 1fr; }
-  .interprom__stats { flex-direction: row; justify-content: flex-start; gap: 2.5rem; }
 }
 
 @media (max-width: 768px) {
@@ -1276,7 +1223,6 @@ a.workshop__link:hover { color: var(--color-gold); }
 
   .school__programs { grid-template-columns: 1fr; }
 
-  .interprom__gallery { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 480px) {
