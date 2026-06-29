@@ -236,22 +236,25 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .hero__title-block {
   position: relative;
   background: #000;
-  display: inline-block;
+  display: block;
+  overflow: hidden;
   margin-bottom: 2rem;
-  line-height: 0;
+  width: fit-content;
 }
 .hero__title {
   font-family: var(--font-display);
-  font-size: clamp(3.5rem, 7.5vw, 8rem);
-  line-height: 0.92;
+  font-size: clamp(5rem, 9vw, 12rem);
+  line-height: 1;
   letter-spacing: 0.03em;
+  white-space: nowrap;
   color: #fff;
   position: relative;
   z-index: 1;
   margin: 0;
-  padding: 0.05em 0 0.12em;
+  padding: 0;
+  display: block;
 }
-.hero__title::after {
+.hero__title-block::after {
   content: '';
   display: block;
   width: 80px;
