@@ -1230,3 +1230,31 @@ a.workshop__link:hover { color: var(--color-gold); }
   .section__title { font-size: clamp(2rem, 10vw, 3.5rem); }
   .help__grid { grid-template-columns: 1fr; }
 }
+
+/* ─── BACK TO TOP ─────────────────────────────────────────────── */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 44px;
+  height: 44px;
+  background: var(--color-gold);
+  color: var(--color-dark);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+  z-index: 900;
+}
+.back-to-top svg { width: 20px; height: 20px; }
+.back-to-top:hover { background: var(--color-text); }
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
